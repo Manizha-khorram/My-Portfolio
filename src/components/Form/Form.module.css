@@ -1,0 +1,73 @@
+.form {
+  /* background-color: #c6def8; */
+  background-image: url("/public/images/2042236.svg");
+  background-size: cover;
+  /* border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out; */
+  width: 100%;
+  max-width: 40em;
+  height: 26em;
+  margin: 2px auto;
+  color: white;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  height: 4vh;
+  width: 2vw;
+}
+.title {
+  margin-top: 130px;
+}
+.formText {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(154, 159, 197, 0.7);
+  margin-left: 50px;
+  /* margin-top: 70px; */
+}
+.formChild {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 160px 150px;
+  padding: 20px;
+  /* background-color: #002782; */
+}
+/* Style the input fields */
+.input {
+  margin-bottom: 15px;
+  padding: 10px;
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 20em;
+  background-color: #4c7daf33;
+  border-radius: 20px;
+}
+
+/* Style the submit button */
+.button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #4c7daf;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 10em;
+  margin-left: 70px;
+}
+
+/* Add hover effect for the submit button */
+.button:hover {
+  background-color: #45a049;
+}
