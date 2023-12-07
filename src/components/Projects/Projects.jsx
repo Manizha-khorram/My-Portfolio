@@ -60,7 +60,10 @@ const Projects = () => {
           </p>
         </div>
         <div className={styles.live_Projects}>
-          <a href=" https://shelf-share-app.onrender.com/"> Todo APP Manager</a>
+          <a href=" https://todo-app-manager-n52f.onrender.com/">
+            {" "}
+            Todo APP Manager
+          </a>
           <img src="/images/TodoAPP.png" className={styles.projectImage} />
           <p>
             Stay on top of your tasks effortlessly with Todo App.
