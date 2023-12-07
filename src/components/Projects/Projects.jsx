@@ -36,7 +36,7 @@ const Projects = () => {
   return (
     <>
       <h2 id="Projects">My Projects</h2>
-      <di className={styles.parent_project}>
+      <div className={styles.parent_project}>
         <div className={styles.live_Projects}>
           <a href=" https://shelf-share-app.onrender.com/"> Shelf Share</a>
           <img src="/images/ShelfShare.png" className={styles.projectImage} />
@@ -60,6 +60,14 @@ const Projects = () => {
           </p>
         </div>
         <div className={styles.live_Projects}>
+          <a href=" https://shelf-share-app.onrender.com/"> Todo APP Manager</a>
+          <img src="/images/TodoAPP.png" className={styles.projectImage} />
+          <p>
+            ShelfShare is an innovative application <br /> that provides a
+            platform <br /> for sharing books within the community.
+          </p>
+        </div>
+        <div className={styles.live_Projects}>
           <a href="https://hack-ctds-style.onrender.com/">CTD Style</a>
           <img
             src="/images/Code the Dream style hack.png"
@@ -71,8 +79,8 @@ const Projects = () => {
             innovative styling solutions.
           </p>
         </div>
-      </di>
-      <h3>Github Projects</h3>
+      </div>
+      {/* <h3>Github Projects</h3>
       <div className={styles.otherProjectsParents}>
         {loading ? (
           <h3>...loading</h3>
@@ -87,7 +95,7 @@ const Projects = () => {
             ))}
           </ul>
         )}
-      </div>
+      </div> */}
     </>
   );
 };
