@@ -15,19 +15,6 @@ const Header = () => {
           </video>
         </div>
         <div>
-          {/* <h1 className={styles.myName}>Manizha khorram</h1> */}
-          <h3 className={styles.desc}>Hello there!</h3>
-          <h3 className={styles.desc}>I am a full-stack web developer</h3>
-          <p className={styles.descWelcom}>
-            🚀Welcome to my world of web development magic.
-            <br /> Explore my journey as a full-stack wizard,
-            <br />
-            weaving tech tales that captivate and inspire.
-            <br /> Let's build something awesome together! 💻✨
-          </p>
-        </div>
-
-        <div>
           <nav className={styles.navList}>
             <a href="#Skills" className={styles.navItem}>
               About
@@ -39,7 +26,24 @@ const Header = () => {
               connect
             </a>
           </nav>
-          <img src="/images/My Photo.png" className={styles.myImage}></img>
+        </div>
+        <div className={styles.headerSecondChild}>
+          <div className={styles.headerDesc}>
+            {/* <h1 className={styles.myName}>Manizha khorram</h1> */}
+            <h3 className={styles.desc}>Hello there!</h3>
+            <h3 className={styles.desc}>I am a full-stack web developer</h3>
+            <p className={styles.descWelcom}>
+              🚀Welcome to my world of web development magic.
+              <br /> Explore my journey as a full-stack wizard,
+              <br />
+              weaving tech tales that captivate and inspire.
+              <br /> Let's build something awesome together! 💻✨
+            </p>
+          </div>
+
+          <div>
+            <img src="/images/My Photo.png" className={styles.myImage}></img>
+          </div>
         </div>
       </header>
     </>

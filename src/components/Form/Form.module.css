@@ -1,10 +1,6 @@
 .form {
-  /* background-color: #c6def8; */
   background-image: url("/public/images/2042236.svg");
   background-size: cover;
-  /* border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease-in-out; */
   width: 100%;
   max-width: 40em;
   height: 26em;
@@ -70,4 +66,67 @@
 /* Add hover effect for the submit button */
 .button:hover {
   background-color: #45a049;
+}
+
+@media screen and (max-width: 767px) {
+  .formSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formChild {
+    margin: 110px 120px;
+    padding: 20px;
+    /* background-color: #002782; */
+  }
+  /* Style the input fields */
+  .input {
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 15em;
+  }
+  .button {
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 8em;
+    margin-left: 50px;
+  }
+  .img {
+    height: 4vh;
+    width: 4vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .formSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formChild {
+    margin: 160px 130px;
+    padding: 20px;
+    /* background-color: #002782; */
+  }
+
+  .formText {
+    text-align: center;
+  }
+  .input {
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 26em;
+  }
+  .button {
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 8em;
+    margin-left: 90px;
+  }
+  .img {
+    height: 5vh;
+    width: 5vw;
+  }
 }

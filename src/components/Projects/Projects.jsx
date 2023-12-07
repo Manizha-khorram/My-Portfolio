@@ -63,8 +63,11 @@ const Projects = () => {
           <a href=" https://shelf-share-app.onrender.com/"> Todo APP Manager</a>
           <img src="/images/TodoAPP.png" className={styles.projectImage} />
           <p>
-            ShelfShare is an innovative application <br /> that provides a
-            platform <br /> for sharing books within the community.
+            Stay on top of your tasks effortlessly with Todo App.
+            <br />
+            Streamline your daily workflow, boost productivity,
+            <br />
+            and organize your life all in one intuitive application.
           </p>
         </div>
         <div className={styles.live_Projects}>

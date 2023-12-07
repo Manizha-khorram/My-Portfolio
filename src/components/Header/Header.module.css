@@ -8,12 +8,12 @@
   margin-top: 20px;
 }
 
-.navList:hover {
+/* .navItem :hover {
   animation: shake 0.3s ease infinite; /* I applied the shake animation on hover */
-}
+/* } */
 
 /* I define the shake animation */
-@keyframes shake {
+/* @keyframes shake {
   0% {
     transform: translateX(0);
   }
@@ -29,7 +29,7 @@
   100% {
     transform: translateX(0);
   }
-}
+}  */
 
 .navItem {
   text-decoration: none;
@@ -39,7 +39,7 @@
 .header {
   display: flex;
   height: 100vh;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .videoWrapper {
@@ -54,11 +54,15 @@
 }
 
 .video {
-  object-fit: cover;
   width: 64.5%;
   height: 100%;
   object-fit: cover;
   margin-left: 35vw;
+}
+
+.headerSecondChild {
+  display: flex;
+  flex-direction: row;
 }
 
 .myImage {
@@ -127,4 +131,62 @@
   line-height: 1.6; /* Adjusted line height for better readability */
   font-size: 18px; /* Increased font size for emphasis */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile styles for screens with a width of 767px or less */
+@media screen and (max-width: 767px) {
+  .navList {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .videoWrapper {
+    width: 100%;
+    background-color: #1d4a9a;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0px;
+  }
+
+  .desc {
+    display: none;
+  }
+  .descWelcom {
+    color: white;
+    margin-left: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6; /* Adjusted line height for better readability */
+    font-size: 14px; /* Increased font size for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    margin-top: 26em;
+  }
+
+  .myImage {
+    margin-left: -310px;
+    width: 15em;
+    height: 15em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .myImage {
+    height: 40vh;
+    width: 24vw;
+    margin: 110px 1px 10px -15px;
+  }
+
+  .desc {
+    font-size: 1.6em;
+  }
+  .descWelcom {
+    font-size: 14px;
+  }
 }

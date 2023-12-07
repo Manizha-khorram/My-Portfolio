@@ -22,32 +22,15 @@
   width: 25vw;
 }
 
-.otherProjectsParents {
-  display: flex;
-  text-align: center;
-  font-size: 12px;
-  margin: 20px;
-}
-.otherProjects {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: 20px;
-}
+@media screen and (max-width: 767px) {
+  .parent_project {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
-.gitProjects {
-  text-decoration: none; /* Remove default underline */
-  color: #0366d6; /* Change link color */
-  font-weight: bold; /* Make the text bold */
-  display: block; /* Display links as block elements */
-  margin: 0px 10px 0px 10px; /* Add spacing between links */
-  padding: 5px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
-}
-
-.gitProjects a:hover {
-  text-decoration: underline; /* Underline on hover */
+  .projectImage {
+    height: 30vh;
+    width: 80vw;
+  }
 }
